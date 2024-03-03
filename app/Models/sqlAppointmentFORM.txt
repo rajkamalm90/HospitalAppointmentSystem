@@ -1,0 +1,10 @@
+1 	id Primary 	bigint(20) 		UNSIGNED 	No 	None 		AUTO_INCREMENT 	Change Change 	Drop Drop 	
+	2 	patient_id Index 	bigint(20) 		UNSIGNED 	No 	None 			Change Change 	Drop Drop 	
+	3 	doctor_id Index 	bigint(20) 		UNSIGNED 	No 	None 			Change Change 	Drop Drop 	
+	4 	intime 	timestamp 			No 	current_timestamp() 		ON UPDATE CURRENT_TIMESTAMP() 	Change Change 	Drop Drop 	
+	5 	outtime 	timestamp 			Yes 	NULL 			Change Change 	Drop Drop 	
+	6 	status 	enum('pending', 'completed') 	utf8mb4_unicode_ci 		No 	pending 			Change Change 	Drop Drop 	
+	7 	description 	varchar(255) 	utf8mb4_unicode_ci 		No 	None 			Change Change 	Drop Drop 	
+	8 	prescription 	varchar(255) 	utf8mb4_unicode_ci 		Yes 	NULL 			Change Change 	Drop Drop 	
+	9 	created_at 	timestamp 			Yes 	NULL 			Change Change 	Drop Drop 	
+	10 	updated_at 	timestamp 			Yes 	NULL
